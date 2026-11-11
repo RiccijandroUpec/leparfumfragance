@@ -1,6 +1,6 @@
 // Le Parfum (DEMO) · catálogo de perfumes con pedido por WhatsApp. Basado en CyR Shop.
-// WHATSAPP: en la demo llega al número de Richard; en la tienda real va el número de Le Parfum.
-const WHATSAPP = '593983185069';
+// WhatsApp de Le Parfum (+593 95 946 2741): ahí llegan los pedidos.
+const WHATSAPP = '593959462741';
 const TIENDA = 'Le Parfum';
 const CLAVE_BOLSA = 'leparfum-bolsa';
 const CLAVE_ENTREGA = 'leparfum-entrega';

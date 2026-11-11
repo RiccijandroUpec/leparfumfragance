@@ -3,8 +3,8 @@
 Demo de la tienda en línea de **Le Parfum** ([@leparfumfragance](https://www.instagram.com/leparfumfragance/)),
 perfumería masculina en Ibarra: perfumes árabes originales en 100 ml y decants de 5 y 10 ml.
 
-> ⚠️ **Es una demostración.** Los productos, precios, notas y fotos son de ejemplo. Los pedidos de prueba llegan al
-> WhatsApp de Richard (cambiar `WHATSAPP` en `app.js` por el número de Le Parfum).
+> ⚠️ **Es una demostración.** Los productos, precios, notas y fotos son de ejemplo. Los pedidos llegan al WhatsApp de
+> Le Parfum (+593 95 946 2741, `WHATSAPP` en `app.js`).
 
 Basada en el catálogo de [CyR Shop](https://cyrshop.app): página estática (HTML, CSS y JavaScript), sin servidor
 ni base de datos. El cliente arma su pedido y lo envía por WhatsApp.
@@ -63,7 +63,7 @@ Abre `index.html` en el navegador o sirve la carpeta, por ejemplo con `php -S 12
 
 ## Para la versión real
 
-1. Fotos reales de los perfumes, precios y el número de WhatsApp de Le Parfum.
+1. Fotos reales de los perfumes y precios reales.
 2. **Google Sheets como panel:** el dueño edita sus perfumes, precios y stock en una hoja y la página la lee sola.
 3. Dominio propio (por ejemplo `leparfum.ec` o un `.com`) y quitar el `noindex`.
 4. Fase 2: pago con tarjeta dentro de la página (Payphone) y factura electrónica del SRI.
