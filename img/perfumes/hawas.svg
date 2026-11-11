@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Frasco de Hawas 100 ml">
+  <defs>
+    <radialGradient id="f-hawas" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#e3eef7"/><stop offset="1" stop-color="#bfd6ea"/>
+    </radialGradient>
+    <linearGradient id="oro-hawas" x1="0" x2="1">
+      <stop offset="0" stop-color="#8a6420"/><stop offset=".45" stop-color="#f6dc96"/><stop offset="1" stop-color="#c9973f"/>
+    </linearGradient>
+    <linearGradient id="brillo-hawas" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".0"/><stop offset=".2" stop-color="#fff" stop-opacity=".35"/>
+      <stop offset=".32" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#f-hawas)"/>
+  <ellipse cx="300" cy="512" rx="170" ry="18" fill="#000" opacity=".12"/>
+  <rect x="268" y="171" width="64" height="38" rx="6" fill="url(#oro-hawas)"/>
+  <rect x="246" y="93" width="108" height="82" rx="16" fill="url(#oro-hawas)"/>
+  <rect x="258" y="101" width="18" height="66" rx="9" fill="#fff" opacity=".35"/>
+  <path d="M300 205c-95 0-130 60-130 150s40 155 130 155 130-65 130-155-35-150-130-150z" fill="#2f6ea5"/><path d="M300 225c-78 0-108 50-108 130s34 135 108 135 108-55 108-135-30-130-108-130z" fill="#7fb3df" opacity=".35"/><path d="M300 205c-95 0-130 60-130 150s40 155 130 155 130-65 130-155-35-150-130-150z" fill="url(#brillo-hawas)"/>
+  <rect x="222" y="336" width="156" height="68" rx="8" fill="#fbf6ec" stroke="url(#oro-hawas)" stroke-width="3"/>
+  <text x="300" y="374" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" letter-spacing="2" fill="#2a2016">HAWAS</text>
+  <text x="300" y="394" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" letter-spacing="3" fill="#8a6420">100 ML · EDP</text>
+</svg>

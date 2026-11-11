@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Decant de Amber Oud 5 ml">
+  <defs>
+    <radialGradient id="f-amber-oud5" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#f6ead2"/><stop offset="1" stop-color="#e5cc9b"/>
+    </radialGradient>
+    <linearGradient id="oro-amber-oud5" x1="0" x2="1">
+      <stop offset="0" stop-color="#8a6420"/><stop offset=".45" stop-color="#f6dc96"/><stop offset="1" stop-color="#c9973f"/>
+    </linearGradient>
+    <linearGradient id="brillo-amber-oud5" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".0"/><stop offset=".2" stop-color="#fff" stop-opacity=".35"/>
+      <stop offset=".32" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#f-amber-oud5)"/>
+  <ellipse cx="300" cy="512" rx="170" ry="18" fill="#000" opacity=".12"/>
+  <rect x="270" y="212" width="60" height="62" rx="10" fill="url(#oro-amber-oud5)"/>
+  <rect x="278" y="220" width="12" height="46" rx="6" fill="#fff" opacity=".4"/>
+  <rect x="262" y="270" width="76" height="240" rx="16" fill="#ffffff" opacity=".55" stroke="#ffffff" stroke-width="3"/>
+  <rect x="270" y="310" width="60" height="192" rx="10" fill="#e0a94a"/>
+  <rect x="270" y="310" width="60" height="192" rx="10" fill="#9a6418" opacity=".55"/>
+  <rect x="262" y="270" width="76" height="240" rx="16" fill="url(#brillo-amber-oud5)"/>
+  <rect x="226" y="366.0" width="148" height="56" rx="8" fill="#fbf6ec" stroke="url(#oro-amber-oud5)" stroke-width="3"/>
+  <text x="300" y="392.0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" letter-spacing="1.5" fill="#2a2016">AMBER OUD</text>
+  <text x="300" y="411.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" letter-spacing="3" fill="#8a6420">DECANT 5 ML</text>
+</svg>

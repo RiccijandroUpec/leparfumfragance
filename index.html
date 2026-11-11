@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Parfum · Perfumes árabes y decants en Ibarra</title>
+  <meta name="description" content="Perfumería masculina en Ibarra: perfumes árabes 100% originales de Lattafa, Armaf, Rasasi, Afnan y Al Haramain, en 100 ml y decants de 5 y 10 ml. Entrega en Ibarra y Atuntaqui y envíos a todo el Ecuador.">
+  <meta property="og:title" content="Le Parfum · Perfumes & Decants">
+  <meta property="og:description" content="Perfumes árabes originales en 100 ml y decants de 5 y 10 ml. Pide por WhatsApp, entrega en Ibarra y Atuntaqui y envíos a todo el Ecuador.">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#14100c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="estilos.css?v=1">
+</head>
+<body>
+  <p class="aviso-demo">Demostración: productos, precios y fotos de ejemplo. Los pedidos de prueba llegan al WhatsApp de Richard.</p>
+
+  <header class="barra">
+    <div class="contenedor barra__fila">
+      <a class="marca" href="#inicio" aria-label="Le Parfum, inicio">
+        <span class="marca__logo" aria-hidden="true">LP</span>
+        <span class="marca__texto">
+          <strong>Le Parfum</strong>
+          <small>Perfumes &amp; Decants · Ibarra</small>
+        </span>
+      </a>
+      <button class="bolsa-boton" type="button" id="abrir-bolsa" aria-label="Ver mi pedido">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span>Mi pedido</span>
+        <span class="bolsa-boton__cantidad" id="bolsa-cantidad" hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="portada">
+      <div class="contenedor portada__rejilla">
+        <div class="portada__contenido">
+          <p class="portada__etiqueta"><span class="punto"></span>Perfumería masculina · 100% originales</p>
+          <h1>Perfumes árabes <span>que se notan</span></h1>
+          <p class="portada__texto">Lattafa, Armaf, Rasasi y más, en frasco de 100 ml o en <strong>decants de 5 y 10 ml</strong> para que pruebes antes de comprar el grande.</p>
+          <div class="portada__acciones">
+            <a class="boton boton--claro" href="#catalogo">Ver perfumes</a>
+            <a class="boton boton--contorno" id="whatsapp-portada" target="_blank" rel="noopener">Escríbenos</a>
+          </div>
+          <ul class="ventajas">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+              <div><strong>100% originales</strong><span>sellados y con lote</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div><strong>Ibarra y Atuntaqui</strong><span>te lo llevamos en persona</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>
+              <div><strong>Todo Ecuador</strong><span>envíos por Servientrega</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="mosaico" aria-hidden="true">
+          <img src="img/perfumes/khamrah.svg" alt="" width="600" height="600" fetchpriority="high">
+          <img src="img/perfumes/cdn-intense.svg" alt="" width="600" height="600">
+          <img src="img/perfumes/9pm-decant-10.svg" alt="" width="600" height="600">
+          <img src="img/perfumes/oud-glory.svg" alt="" width="600" height="600">
+        </div>
+      </div>
+    </section>
+
+    <div class="marcas" aria-label="Marcas">
+      <div class="marcas__pista">
+        <span>Lattafa</span><span>Armaf</span><span>Rasasi</span><span>Afnan</span><span>Al Haramain</span><span>Decants 5 y 10 ml</span>
+        <span aria-hidden="true">Lattafa</span><span aria-hidden="true">Armaf</span><span aria-hidden="true">Rasasi</span><span aria-hidden="true">Afnan</span><span aria-hidden="true">Al Haramain</span><span aria-hidden="true">Decants 5 y 10 ml</span>
+      </div>
+    </div>
+
+    <section class="contenedor catalogo" id="catalogo" aria-labelledby="titulo-catalogo">
+      <div class="catalogo__cabecera">
+        <div>
+          <p class="antetitulo">Originales · 100 ml y decants</p>
+          <h2 id="titulo-catalogo">Perfumes</h2>
+        </div>
+        <div class="buscadores">
+          <label class="buscador">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+            <input id="buscar" type="search" placeholder="Busca por nombre o nota: vainilla, oud…" aria-label="Buscar perfume">
+          </label>
+          <select id="filtro-marca" class="selector" aria-label="Marca">
+            <option value="todas">Todas las marcas</option>
+          </select>
+        </div>
+      </div>
+      <div class="filtros" aria-label="Familia olfativa">
+        <button type="button" class="filtro activo" data-familia="todo" aria-pressed="true">Todos</button>
+        <button type="button" class="filtro" data-familia="dulce" aria-pressed="false">Dulces</button>
+        <button type="button" class="filtro" data-familia="fresco" aria-pressed="false">Frescos</button>
+        <button type="button" class="filtro" data-familia="amaderado" aria-pressed="false">Amaderados</button>
+        <button type="button" class="filtro" data-familia="especiado" aria-pressed="false">Especiados</button>
+        <button type="button" class="filtro" data-familia="oud" aria-pressed="false">Oud y ámbar</button>
+      </div>
+      <p class="cuantos" id="cuantos" aria-live="polite"></p>
+      <div class="rejilla" id="rejilla"></div>
+      <div class="sin-resultados" id="sin-resultados" hidden>
+        <p>No encontramos perfumes con esos filtros.</p>
+        <button class="boton boton--contorno-oscuro" type="button" id="limpiar-filtros">Ver todos</button>
+      </div>
+    </section>
+
+    <section class="decants" aria-labelledby="titulo-decants">
+      <div class="contenedor decants__fila">
+        <div>
+          <p class="antetitulo">¿Primera vez?</p>
+          <h2 id="titulo-decants">Prueba con un decant</h2>
+          <p>Un <strong>decant</strong> es el mismo perfume original pasado del frasco a un atomizador de 5 o 10 ml. Lo usas unos días, ves cómo te queda y cuánto dura en tu piel, y después compras el frasco grande sin miedo a equivocarte.</p>
+        </div>
+        <ul class="decants__datos">
+          <li><strong>5 ml</strong><span>unas 60 atomizaciones</span></li>
+          <li><strong>10 ml</strong><span>unas 120 atomizaciones</span></li>
+          <li><strong>100 ml</strong><span>el frasco completo</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pasos" aria-labelledby="titulo-pasos">
+      <div class="contenedor">
+        <p class="antetitulo">Fácil y seguro</p>
+        <h2 id="titulo-pasos">¿Cómo comprar?</h2>
+        <ol class="pasos__lista">
+          <li><span>1</span><div><strong>Elige</strong><p>Escoge tu perfume y el tamaño: 100 ml o decant de 5 o 10 ml.</p></div></li>
+          <li><span>2</span><div><strong>Escríbenos</strong><p>Envía tu pedido por WhatsApp con un toque. Te confirmamos disponibilidad.</p></div></li>
+          <li><span>3</span><div><strong>Paga</strong><p>Por transferencia, DeUna o con tarjeta: te enviamos un link de pago seguro.</p></div></li>
+          <li><span>4</span><div><strong>Recibe</strong><p>En persona en Ibarra o Atuntaqui, o por Servientrega a todo el Ecuador.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contenedor preguntas" aria-labelledby="titulo-preguntas">
+      <p class="antetitulo">Resolvemos tus dudas</p>
+      <h2 id="titulo-preguntas">Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Son originales?</summary>
+        <p>Sí. Son perfumes originales de las casas árabes (Lattafa, Armaf, Rasasi, Afnan, Al Haramain), sellados y con su código de lote. Si quieres, te mandamos foto o video del frasco antes de enviarlo.</p>
+      </details>
+      <details>
+        <summary>¿Qué es un decant?</summary>
+        <p>Es el mismo perfume original pasado a un atomizador pequeño de 5 o 10 ml. Sirve para probarlo varios días o para tener varios aromas sin comprar todos los frascos grandes.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto duran en la piel?</summary>
+        <p>Depende del perfume y de tu piel. En cada ficha ponemos la duración aproximada: los orientales y con oud suelen durar 10 horas o más; los frescos, de 6 a 8 horas.</p>
+      </details>
+      <details>
+        <summary>¿Cómo pago?</summary>
+        <p>Por transferencia, DeUna o con tarjeta de crédito o débito: te enviamos un link de pago seguro por WhatsApp.</p>
+      </details>
+      <details>
+        <summary>¿Hacen envíos fuera de Ibarra?</summary>
+        <p>Sí, a todo el Ecuador por Servientrega. El costo depende de la ciudad y te lo confirmamos antes de pagar. En Ibarra y Atuntaqui te lo entregamos en persona.</p>
+      </details>
+      <details>
+        <summary>¿No sabes cuál elegir?</summary>
+        <p>Escríbenos qué te gusta (dulce, fresco, para el día o para la noche) y te recomendamos dos o tres opciones. Si dudas, empieza con decants.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <div>
+        <strong>Le Parfum</strong>
+        <p>Perfumes &amp; Decants · Ibarra, Ecuador · <a href="https://www.instagram.com/leparfumfragance/" target="_blank" rel="noopener">@leparfumfragance</a></p>
+      </div>
+      <a class="boton boton--whatsapp" id="whatsapp-pie" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+  </footer>
+
+  <a class="flotante" id="whatsapp-flotante" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+  </a>
+
+  <dialog class="ficha" id="ficha" aria-labelledby="ficha-nombre">
+    <button class="cerrar" type="button" data-cerrar aria-label="Cerrar">×</button>
+    <div class="ficha__galeria">
+      <img id="ficha-foto" alt="">
+    </div>
+    <div class="ficha__info">
+      <p class="ficha__marca" id="ficha-marca"></p>
+      <h3 id="ficha-nombre"></h3>
+      <p class="etiquetas" id="ficha-etiquetas"></p>
+      <p class="ficha__precio"><span id="ficha-precio"></span><span class="insignia" id="ficha-oferta" hidden></span></p>
+      <p class="ficha__descripcion" id="ficha-descripcion"></p>
+
+      <div class="grupo">
+        <p class="grupo__titulo">Tamaño</p>
+        <div class="opciones opciones--tamano" id="opciones-tamano"></div>
+      </div>
+
+      <dl class="notas">
+        <div><dt>Salida</dt><dd id="nota-salida"></dd></div>
+        <div><dt>Corazón</dt><dd id="nota-corazon"></dd></div>
+        <div><dt>Fondo</dt><dd id="nota-fondo"></dd></div>
+        <div><dt>Duración</dt><dd id="ficha-duracion"></dd></div>
+      </dl>
+
+      <div class="grupo grupo--fila">
+        <p class="grupo__titulo">Cantidad</p>
+        <div class="cantidad">
+          <button type="button" id="menos" aria-label="Menos">−</button>
+          <output id="cantidad">1</output>
+          <button type="button" id="mas" aria-label="Más">+</button>
+        </div>
+      </div>
+
+      <p class="aviso" id="ficha-aviso" role="alert"></p>
+      <div class="ficha__acciones">
+        <button class="boton" type="button" id="agregar">Agregar a mi pedido</button>
+        <button class="boton boton--whatsapp" type="button" id="pedir-ahora">Pedir ahora por WhatsApp</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="bolsa" id="bolsa" aria-labelledby="bolsa-titulo">
+    <div class="bolsa__cabecera">
+      <h3 id="bolsa-titulo">Mi pedido</h3>
+      <button class="cerrar" type="button" data-cerrar aria-label="Cerrar">×</button>
+    </div>
+    <ul class="bolsa__lista" id="bolsa-lista"></ul>
+    <p class="bolsa__vacia" id="bolsa-vacia">Todavía no agregas perfumes.</p>
+    <div class="bolsa__pie" id="bolsa-pie">
+      <fieldset class="entrega">
+        <legend>¿Cómo lo recibes?</legend>
+        <label><input type="radio" name="entrega" value="local" checked><span><strong>Ibarra o Atuntaqui</strong><small>Te lo llevamos en persona, sin costo</small></span></label>
+        <label><input type="radio" name="entrega" value="servientrega"><span><strong>Otra ciudad</strong><small>Por Servientrega, el envío según la ciudad</small></span></label>
+      </fieldset>
+      <p class="bolsa__total">Total <strong id="bolsa-total">$0</strong></p>
+      <p class="bolsa__nota" id="bolsa-envio"></p>
+      <p class="bolsa__nota">Pagas por transferencia, DeUna o tarjeta (te enviamos un link de pago).</p>
+      <button class="boton boton--whatsapp" type="button" id="enviar-pedido">Enviar pedido por WhatsApp</button>
+      <button class="enlace" type="button" id="vaciar">Vaciar pedido</button>
+    </div>
+  </dialog>
+
+  <script src="productos.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
